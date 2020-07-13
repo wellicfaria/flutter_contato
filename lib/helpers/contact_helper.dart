@@ -114,6 +114,7 @@ class Contact {
   Contact.fromMap(Map map) {
     id = map["idColumn"];
     name = map["nameColumn"];
+    email = map["emailColumn"];
     phone = map["phoneColum"];
     img = map["imgColum"];
   }
@@ -125,7 +126,7 @@ class Contact {
       phoneColum: phone,
       imgColum: img
     };
-    if (map[idColumm] != null) {
+    if (id != null) {
       map[idColumm] = id;
     }
     return map;
